@@ -4,35 +4,29 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using DrankAPI.Models;
-using DrankAPI.Services;
 
 namespace DrankAPI.Controllers
 {
      [Route("api/[controller]")]
     public class DrankController : Controller
     {
+            private readonly IDrankRepository _DrankRepository;
 
-        DrankService _DrankService;
+            public DrankController(IDrankRepository drankRepository){
+                _DrankRepository = drankRepository;
+            }
+        
 
+            public ViewResult Index(){
+                var model = _DrankRepository.GetAllDrank();
+                return View(model);
+            }
 
-        public DrankController(DrankService drankService)
-        {
-            this._DrankService = drankService;
-        }
-
-         // GET api/drank
-        [HttpGet]
-        public ActionResult Get()
-        {
-            return Ok(this._DrankService.GetDranks());
-        }
-
-        [HttpPost]
-        public ActionResult Post(Drank drank)
-        {
-            this._DrankService.AddDrank(drank);
-            return Ok();
-        }
+            public ViewResult Details(){
+                Drank Model = _DrankRepository.GetDrank(1);
+                ViewBag.PageTitle = "Employee Details";
+                return View(Model);
+            }
 
     }
 }
