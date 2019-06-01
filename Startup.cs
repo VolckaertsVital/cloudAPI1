@@ -10,7 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Owin;
+using DrankAPI.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace DrankAPI
 {
@@ -31,7 +32,7 @@ namespace DrankAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-           
+           services.AddSingleton<IDrankRepository, MockDrankRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,9 +46,15 @@ namespace DrankAPI
             {
                 app.UseHsts();
             }
-
+            app.UseStaticFiles();
             app.UseHttpsRedirection();
             app.UseMvc();
+            app.UseMvcWithDefaultRoute();
+
+            app.Run(async (context)=> 
+            {
+                await context.Response.WriteAsync("something went wrong, please check your URL or try again later . ");
+            });
         }
     }
 }

@@ -12,3 +12,13 @@ C:\Users\Vital Volckaerts\Documents\school\2EA\Cloud API\2de jaar\DrankAPI\obj\D
 C:\Users\Vital Volckaerts\Documents\school\2EA\Cloud API\2de jaar\DrankAPI\obj\Debug\netcoreapp2.1\DrankAPI.RazorTargetAssemblyInfo.cache
 C:\Users\Vital Volckaerts\Documents\school\2EA\Cloud API\2de jaar\DrankAPI\obj\Debug\netcoreapp2.1\DrankAPI.dll
 C:\Users\Vital Volckaerts\Documents\school\2EA\Cloud API\2de jaar\DrankAPI\obj\Debug\netcoreapp2.1\DrankAPI.pdb
+C:\Users\Vital Volckaerts\Documents\school\2EA\Cloud API\2de jaar\DrankAPI\bin\Debug\netcoreapp2.1\DrankAPI.Views.dll
+C:\Users\Vital Volckaerts\Documents\school\2EA\Cloud API\2de jaar\DrankAPI\bin\Debug\netcoreapp2.1\DrankAPI.Views.pdb
+C:\Users\Vital Volckaerts\Documents\school\2EA\Cloud API\2de jaar\DrankAPI\obj\Debug\netcoreapp2.1\DrankAPI.TagHelpers.input.cache
+C:\Users\Vital Volckaerts\Documents\school\2EA\Cloud API\2de jaar\DrankAPI\obj\Debug\netcoreapp2.1\DrankAPI.TagHelpers.output.cache
+C:\Users\Vital Volckaerts\Documents\school\2EA\Cloud API\2de jaar\DrankAPI\obj\Debug\netcoreapp2.1\DrankAPI.RazorCoreGenerate.cache
+C:\Users\Vital Volckaerts\Documents\school\2EA\Cloud API\2de jaar\DrankAPI\obj\Debug\netcoreapp2.1\Razor\Views\Home\Details.g.cshtml.cs
+C:\Users\Vital Volckaerts\Documents\school\2EA\Cloud API\2de jaar\DrankAPI\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Vital Volckaerts\Documents\school\2EA\Cloud API\2de jaar\DrankAPI\obj\Debug\netcoreapp2.1\DrankAPI.RazorTargetAssemblyInfo.cs
+C:\Users\Vital Volckaerts\Documents\school\2EA\Cloud API\2de jaar\DrankAPI\obj\Debug\netcoreapp2.1\DrankAPI.Views.pdb
+C:\Users\Vital Volckaerts\Documents\school\2EA\Cloud API\2de jaar\DrankAPI\obj\Debug\netcoreapp2.1\DrankAPI.csproj.CopyComplete
