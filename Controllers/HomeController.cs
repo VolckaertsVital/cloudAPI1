@@ -7,23 +7,23 @@ using DrankAPI.Models;
 
 namespace DrankAPI.Controllers
 {
-     [Route("api/[controller]")]
-    public class DrankController : Controller
+
+
+    public class HomeController : Controller
     {
             private readonly IDrankRepository _DrankRepository;
 
-            public DrankController(IDrankRepository drankRepository){
+            public HomeController(IDrankRepository drankRepository){
                 _DrankRepository = drankRepository;
             }
-        
-
+                
             public ViewResult Index(){
                 var model = _DrankRepository.GetAllDrank();
                 return View(model);
             }
 
-            public ViewResult Details(){
-                Drank Model = _DrankRepository.GetDrank(1);
+            public ViewResult Details(int id){
+                Drank Model = _DrankRepository.GetDrank(id);
                 ViewBag.PageTitle = "Employee Details";
                 return View(Model);
             }

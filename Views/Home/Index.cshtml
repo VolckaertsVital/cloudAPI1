@@ -1,4 +1,10 @@
-@model IEnumerable<DrankAPI.Models.Drank>
+@model IEnumerable<Drank>
+
+
+@{
+  ViewBag.Title = "Drank list";
+}
+
 
 <div >
   <button [disabled]="!CanFirst()" (click)="First()">First</button>
@@ -14,6 +20,7 @@
       <th>Id</th>
       <th>Name</th>
       <th>NameBrand</th>
+      <th>Meer details</th>
      
       <th></th>
     </tr>
@@ -23,12 +30,14 @@
             <td>@Drank.Id</td>
              <td>@Drank.name</td>
             <td>@Drank.NameBrand</td>
+            <td><a routerLink="/details/{{r.Id}}">
+            <button> Meer info</button>
+            </a></td>
+           
            
         </tr>
     }
-        <a routerLink="/detail/{{r.Id}}">
-          <button> Meer info</button>
-        </a>
+       
       </td>
     </tr>
   </table>

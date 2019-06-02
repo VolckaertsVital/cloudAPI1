@@ -1,13 +1,9 @@
-@model DrankAPI.Models.Drank;
+@model Drank;
 
-<div *ngIf="list" class="center">
-  <button [disabled]="!CanFirst()" (click)="First()">First</button>
-  <button [disabled]="!CanPrev()" (click)="Prev()">Previous</button>
-  <button [disabled]="!CanNext()" (click)="Next()">Next</button>
-  <button [disabled]="!CanLast()" (click)="Last()">Last</button>
-  <br/>
-  <br/> Search by TAG:
-  <input type="text" [(ngModel)]="Search" placeholder="Enter the Tag here" />
+
+@{
+  ViewBag.Title = "Drank Details";
+}
 
   <table>
     <tr class="header">
@@ -24,8 +20,7 @@
       <td>@Model.type</td>
       <td>@Model.AlcoholPersentage</td>
       <td>
-        <a routerLink="/detail/{{r.Id}}">
-          <button> Meer info</button>
+       
         </a>
       </td>
     </tr>

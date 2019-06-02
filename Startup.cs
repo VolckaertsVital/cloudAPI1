@@ -15,7 +15,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace DrankAPI
 {
-    public partial class Startup
+    public class Startup
     {
         public Startup(IConfiguration configuration)
         {
@@ -32,7 +32,7 @@ namespace DrankAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-           services.AddSingleton<IDrankRepository, MockDrankRepository>();
+            services.AddSingleton<IDrankRepository, MockDrankRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,8 +48,10 @@ namespace DrankAPI
             }
             app.UseStaticFiles();
             app.UseHttpsRedirection();
-            app.UseMvc();
-            app.UseMvcWithDefaultRoute();
+            app.UseMvc(routes => {
+                routes.MapRoute("default", "{controller=home}/{action=index}/{id?}");
+            });
+            //app.UseMvcWithDefaultRoute();
 
             app.Run(async (context)=> 
             {
