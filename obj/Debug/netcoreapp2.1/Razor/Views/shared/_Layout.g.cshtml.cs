@@ -49,7 +49,7 @@ using DrankAPI.Models;
             WriteLiteral("<!DOCTYPE html> \r\n<html>\r\n    ");
             EndContext();
             BeginContext(30, 120, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e94b84e2ab84f8aab44ac2f199d87e8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "79f909fb744e4eebbe00c36b4a2d1cb1", async() => {
                 BeginContext(36, 79, true);
                 WriteLiteral("\r\n        <meta name=\"viewport\" content=\"width=device-width\"/>\r\n        <title>");
                 EndContext();
@@ -79,7 +79,7 @@ using DrankAPI.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(156, 77, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ecd701376c5e4a3097d07cb28e7809f9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c105437d68dc4f69940cadac3be8444f", async() => {
                 BeginContext(162, 29, true);
                 WriteLiteral("\r\n        <div>\r\n            ");
                 EndContext();

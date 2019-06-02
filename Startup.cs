@@ -48,11 +48,11 @@ namespace DrankAPI
             }
             app.UseStaticFiles();
             app.UseHttpsRedirection();
-            app.UseMvc(routes => {
-                routes.MapRoute("default", "{controller=home}/{action=index}/{id?}");
-            });
+            //app.UseMvc(routes => {
+            //   routes.MapRoute("default", "{controller=home}/{action=index}/{id?}");
+            //});
             //app.UseMvcWithDefaultRoute();
-
+            app.UseMvc();
             app.Run(async (context)=> 
             {
                 await context.Response.WriteAsync("something went wrong, please check your URL or try again later . ");
