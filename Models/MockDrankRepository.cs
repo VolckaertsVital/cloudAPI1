@@ -13,6 +13,7 @@ namespace DrankAPI.Models{
                     NameBrand = "Bacardi",
                     name = "Oakheart",
                     type = "Rum",
+                    Quantity = 5,
                     AlcoholPersentage = 35
                 },
                 new Drank() {
@@ -20,6 +21,7 @@ namespace DrankAPI.Models{
                     NameBrand = "IORDANOV",
                     name = "/",
                     type = "Vodka",
+                    Quantity = 19,
                     AlcoholPersentage = 40,
                 },
                 new Drank() {
@@ -27,6 +29,7 @@ namespace DrankAPI.Models{
                     NameBrand = "Absolut.",
                     name = "Original Vodka",
                     type = "Vodka",
+                    Quantity = 15,
                     AlcoholPersentage = 40,
                 },
                 new Drank() {
@@ -34,6 +37,7 @@ namespace DrankAPI.Models{
                     NameBrand = "Filliers",
                     name = "Cavaillon",
                     type = "Jenever",
+                    Quantity = 10,
                     AlcoholPersentage = 20,
                 },
                 new Drank() {
@@ -41,6 +45,7 @@ namespace DrankAPI.Models{
                     NameBrand = "Trojka",
                     name = "Pink",
                     type = "Vodka",
+                    Quantity = 44,
                     AlcoholPersentage = 17,
                 },
                 new Drank() {
@@ -48,6 +53,7 @@ namespace DrankAPI.Models{
                     NameBrand = "Jack Daniels",
                     name = "Tennessee Fire",
                     type = "Wiskey",
+                    Quantity = 110,
                     AlcoholPersentage = 35,
                 },
                 new Drank() {
@@ -55,6 +61,7 @@ namespace DrankAPI.Models{
                     NameBrand = "Peterman",
                     name = "Cuberdon / neuzen",
                     type = "Jenever",
+                    Quantity = 55,
                     AlcoholPersentage = 15,
                 },
                 new Drank() {
@@ -62,6 +69,7 @@ namespace DrankAPI.Models{
                     NameBrand = "Bols",
                     name = "Banana",
                     type = "Liqueur",
+                    Quantity = 21,
                     AlcoholPersentage = 17,
                 },
                 new Drank() {
@@ -69,6 +77,7 @@ namespace DrankAPI.Models{
                     NameBrand = "Jagermeister",
                     name = "/",
                     type = "herbal liqueur",
+                    Quantity = 57,
                     AlcoholPersentage = 35,
                 }
             };

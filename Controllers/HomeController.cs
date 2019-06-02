@@ -30,6 +30,11 @@ namespace DrankAPI.Controllers
                 ViewBag.PageTitle = "Employee Details";
                 return View(Model);
             }
+            
+            [Route("[action]")]
+            public ViewResult Create(){
+                return View();
+            }
 
     }
 }

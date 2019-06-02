@@ -4,22 +4,59 @@
 @{
   ViewBag.Title = "Drank list";
 }
+<style>
+  .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+  #products {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  }
+
+  #products td, #products th {
+  border: 1px solid #ddd;
+  padding: 8px;
+    }
+
+  #products tr:nth-child(even){background-color: #f2f2f2;}
+
+  #products tr:hover {background-color: #ddd;}
+
+  #products th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
 
 
 <div >
-  <button [disabled]="!CanFirst()" (click)="First()">First</button>
-  <button [disabled]="!CanPrev()" (click)="Prev()">Previous</button>
-  <button [disabled]="!CanNext()" (click)="Next()">Next</button>
-  <button [disabled]="!CanLast()" (click)="Last()">Last</button>
+  <button [disabled]="!CanFirst()" (click)="First()" class="button">First</button>
+  <button [disabled]="!CanPrev()" (click)="Prev()" class="button">Previous</button>
+  <button [disabled]="!CanNext()" (click)="Next()" class="button">Next</button>
+  <button [disabled]="!CanLast()" (click)="Last()" class="button">Last</button>
   <br/>
-  <br/> Search by TAG:
+  <br/> Search by ID:
   <input type="text" [(ngModel)]="Search" placeholder="Enter the Tag here" />
 
-  <table>
+  <table id="products">
     <tr class="header">
       <th>Id</th>
       <th>Name</th>
       <th>NameBrand</th>
+      <th>image</th>
       <th>Meer details</th>
      
       <th></th>
@@ -30,8 +67,11 @@
             <td>@Drank.Id</td>
              <td>@Drank.name</td>
             <td>@Drank.NameBrand</td>
-            <td><a routerLink="/details/{{r.Id}}">
-            <button> Meer info</button>
+            <td>
+              <img src="~/images/no-image-available.png">
+            </td>
+            <td><a asp-controller="home" asp-action="details" asp-route-id="@Drank.Id">
+            <button class="button"> Meer info</button>
             </a></td>
            
            
