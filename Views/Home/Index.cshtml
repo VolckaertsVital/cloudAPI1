@@ -49,7 +49,7 @@
   <button [disabled]="!CanLast()" (click)="Last()" class="button">Last</button>
   <br/>
   <br/> Search by ID:
-  <input type="text" [(ngModel)]="Search" placeholder="Enter the Tag here" />
+  @Html.TextBox("search")<input type="submit" placeholder="Enter the Tag here" />
 
   <table id="products">
     <tr class="header">

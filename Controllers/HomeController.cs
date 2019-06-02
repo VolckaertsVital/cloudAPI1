@@ -19,9 +19,11 @@ namespace DrankAPI.Controllers
             [Route("")]
             [Route("[action]")]
             [Route("~/")]
-            public ViewResult Index(){
+            public ViewResult Index(String search){
                 var model = _DrankRepository.GetAllDrank();
                 return View(model);
+
+                //.Where(x => x.name.Contains(search));
             }
 
             [Route("[action]/{id?}")]
@@ -30,9 +32,28 @@ namespace DrankAPI.Controllers
                 ViewBag.PageTitle = "Employee Details";
                 return View(Model);
             }
-            
+
             [Route("[action]")]
+            [HttpGet]
             public ViewResult Create(){
+                return View();
+            }
+
+            [Route("[action]")]
+            [HttpPost]
+            public IActionResult Create(Drank drank){
+                if (ModelState.IsValid)
+                {
+                    Drank newDrank =  _DrankRepository.Add(drank);
+                    return RedirectToAction("details", new { id =  newDrank.Id});
+                }
+
+                return View();
+            }
+
+            [Route("[action]")]
+            
+            public ViewResult Edit(){
                 return View();
             }
 

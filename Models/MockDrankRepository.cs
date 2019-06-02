@@ -79,8 +79,23 @@ namespace DrankAPI.Models{
                     type = "herbal liqueur",
                     Quantity = 57,
                     AlcoholPersentage = 35,
+                },
+                new Drank() {
+                    Id = 10,
+                    NameBrand = "GoldStrike",
+                    name = "/",
+                    type = "liqueur",
+                    Quantity = 120,
+                    AlcoholPersentage = 50,
                 }
             };
+        }
+
+        public Drank Add(Drank drank)
+        {
+            drank.Id= _DrankList.Max(e => e.Id) + 1;
+            _DrankList.Add(drank);
+            return drank;
         }
 
         public IEnumerable<Drank> GetAllDrank()

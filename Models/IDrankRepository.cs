@@ -6,5 +6,7 @@ namespace DrankAPI.Models{
         Drank GetDrank(int Id);
 
         IEnumerable<Drank> GetAllDrank();
+
+        Drank Add(Drank drank);
     }
 }
