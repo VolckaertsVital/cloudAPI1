@@ -58,6 +58,7 @@
       <th>NameBrand</th>
       <th>image</th>
       <th>Meer details</th>
+      <th></th>
      
       <th></th>
     </tr>
@@ -72,6 +73,9 @@
             </td>
             <td><a asp-controller="home" asp-action="details" asp-route-id="@Drank.Id">
             <button class="button"> Meer info</button>
+            </a></td>
+            <td><a asp-controller="home" asp-action="Delete" asp-route-id="@Drank.Id">
+            <button class="button"> Delete</button>
             </a></td>
            
            

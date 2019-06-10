@@ -53,9 +53,19 @@ namespace DrankAPI.Controllers
 
             [Route("[action]")]
             
-            public ViewResult Edit(){
+            public ViewResult Edit(int id){
+                Drank drank = _DrankRepository.GetDrank(id);
                 return View();
             }
+
+            [Route("[action]")]
+            public IActionResult delete(int id){
+                
+                var model =_DrankRepository.GetDrank(id);
+                _DrankRepository.Remove(model);
+                return View();
+            }
+
 
     }
 }

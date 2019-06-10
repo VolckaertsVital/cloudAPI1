@@ -2696,6 +2696,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Home\\Delete.cshtml",
+      "TargetPath": "Views\\Home\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Home\\_ViewStart.cshtml",
       "TargetPath": "Views\\Home\\_ViewStart.cshtml",
       "FileKind": "mvc"

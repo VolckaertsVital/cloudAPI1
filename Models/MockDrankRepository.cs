@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -98,6 +99,7 @@ namespace DrankAPI.Models{
             return drank;
         }
 
+
         public IEnumerable<Drank> GetAllDrank()
         {
             return _DrankList;
@@ -106,6 +108,14 @@ namespace DrankAPI.Models{
         public Drank GetDrank(int Id)
         {
             return _DrankList.FirstOrDefault(e => e.Id == Id);
+        }
+
+        public Drank Remove(Drank model)
+        {
+           _DrankList.Remove(model);
+           return model;
+           
+        
         }
     }
 }

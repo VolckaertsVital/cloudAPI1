@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace DrankAPI.Models{
@@ -8,5 +9,6 @@ namespace DrankAPI.Models{
         IEnumerable<Drank> GetAllDrank();
 
         Drank Add(Drank drank);
+        Drank Remove(Drank model);
     }
 }
