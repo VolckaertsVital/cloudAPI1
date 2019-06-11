@@ -12,7 +12,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using DrankAPI.Models;
 using Microsoft.AspNetCore.Http;
-
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 
 namespace DrankAPI
 {
@@ -33,7 +34,14 @@ namespace DrankAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddSingleton<IDrankRepository, MockDrankRepository>();
+            services.AddScoped<IDrankRepository, MockDrankRepository>();
+            services.AddDbContextPool<AppDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DrankDBConnection")));
+            /* services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                {
+                    options.Authority = "https://accounts.google.com";      // De uitgever van het token (en waarbij dus de geldigheid kan worden afgetoetst)
+                    options.Audience = "---noteer hier je client id----";   // diegene waarvoor het token bestemt is.
+                });*/
         
         }
 

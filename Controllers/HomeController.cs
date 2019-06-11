@@ -19,11 +19,17 @@ namespace DrankAPI.Controllers
             [Route("")]
             [Route("[action]")]
             [Route("~/")]
-            public ViewResult Index(String search){
+            public ViewResult Index(String searchBy,String search){
                 var model = _DrankRepository.GetAllDrank();
-                return View(model);
-
-                //.Where(x => x.name.Contains(search));
+                //return View(model);
+                if (searchBy == "Name")
+                {
+                    return View(model.Where(x => x.name == search || search == null ));
+                }
+                else {
+                    return View(model.Where(x => x.NameBrand == search  || search == null ));
+                }
+                
             }
 
             [Route("[action]/{id?}")]

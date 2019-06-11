@@ -10,5 +10,6 @@ namespace DrankAPI.Models{
 
         Drank Add(Drank drank);
         Drank Remove(Drank model);
+        Drank Update(Drank drankChanges);
     }
 }

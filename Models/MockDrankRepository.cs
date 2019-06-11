@@ -81,8 +81,16 @@ namespace DrankAPI.Models{
                     Quantity = 57,
                     AlcoholPersentage = 35,
                 },
-                new Drank() {
+                 new Drank() {
                     Id = 10,
+                    NameBrand = "Bacardi",
+                    name = "Carta Negra",
+                    type = "Rum",
+                    Quantity = 57,
+                    AlcoholPersentage = 40,
+                },
+                new Drank() {
+                    Id = 11,
                     NameBrand = "GoldStrike",
                     name = "/",
                     type = "liqueur",
@@ -116,6 +124,20 @@ namespace DrankAPI.Models{
            return model;
            
         
+        }
+
+        public Drank Update(Drank drankChanges)
+        {
+           Drank drank = _DrankList.FirstOrDefault(e => e.Id == drankChanges.Id);
+           if (drank != null)
+           {
+               drank.name = drankChanges.name;
+               drank.NameBrand = drankChanges.NameBrand;
+               drank.type = drankChanges.type;
+               drank.Quantity = drankChanges.Quantity;
+               drank.AlcoholPersentage = drankChanges.AlcoholPersentage;
+           }
+           return drank;
         }
     }
 }

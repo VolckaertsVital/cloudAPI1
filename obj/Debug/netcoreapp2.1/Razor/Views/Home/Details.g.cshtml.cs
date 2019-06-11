@@ -170,7 +170,7 @@ using DrankAPI.Models;
             WriteLiteral("</td>\r\n      <td>\r\n       \r\n        </a>\r\n      </td>\r\n    </tr>\r\n    <div class=\"card-footer\">\r\n        ");
             EndContext();
             BeginContext(1295, 67, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "86741bdfc9ec4b8eb0be2291e5457684", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d6fe59ab841046e7b454688db05a30f3", async() => {
                 BeginContext(1354, 4, true);
                 WriteLiteral("Back");
                 EndContext();
@@ -195,7 +195,7 @@ using DrankAPI.Models;
             WriteLiteral("\r\n        ");
             EndContext();
             BeginContext(1372, 67, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f067ab46c6fc476daa91baf866d22bee", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb3997831e774bd79bf6dd40e40501b6", async() => {
                 BeginContext(1431, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
