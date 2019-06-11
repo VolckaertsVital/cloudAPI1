@@ -82,7 +82,7 @@ using DrankAPI.Models;
             WriteLiteral("\r\n<div>\r\n    <p>\r\n        Weet u zeker dat u dit wilt verwijderen?\r\n    </p>\r\n    <p>\r\n        zo ja, druk submit.\r\n    </p>\r\n     ");
             EndContext();
             BeginContext(528, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "691b9ddb179c424a944702eb23b80993", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7925f9f070904f81a45afd04c82791d5", async() => {
                 BeginContext(587, 6, true);
                 WriteLiteral("submit");
                 EndContext();

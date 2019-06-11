@@ -1,4 +1,8 @@
-@model IEnumerable<Drank>
+
+@using PagedList;
+@using PagedList.Mvc;
+
+@model IPagedList<Drank>
 
 
 @{
@@ -45,12 +49,6 @@
 
 
 <div >
-  <button [disabled]="!CanFirst()" (click)="First()" class="button">First</button>
-  <button [disabled]="!CanPrev()" (click)="Prev()" class="button">Previous</button>
-  <button [disabled]="!CanNext()" (click)="Next()" class="button">Next</button>
-  <button [disabled]="!CanLast()" (click)="Last()" class="button">Last</button>
-  <br/>
-
 
   @using (Html.BeginForm("index", "home", FormMethod.Get))
   {

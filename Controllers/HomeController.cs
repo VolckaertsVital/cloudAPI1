@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using DrankAPI.Models;
+using PagedList;
+using PagedList.Mvc;
 
 namespace DrankAPI.Controllers
 {
@@ -19,15 +21,15 @@ namespace DrankAPI.Controllers
             [Route("")]
             [Route("[action]")]
             [Route("~/")]
-            public ViewResult Index(String searchBy,String search){
+            public ActionResult Index(String searchBy,String search, int? page){
                 var model = _DrankRepository.GetAllDrank();
-                //return View(model);
+                
                 if (searchBy == "Name")
                 {
-                    return View(model.Where(x => x.name == search || search == null ));
+                    return View(model.Where(x => x.name == search || search == null ).ToPagedList(page ?? 1,8));
                 }
                 else {
-                    return View(model.Where(x => x.NameBrand == search  || search == null ));
+                    return View(model.Where(x => x.NameBrand == search  || search == null ).ToPagedList(page ?? 1,8));
                 }
                 
             }

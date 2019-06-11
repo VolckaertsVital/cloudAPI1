@@ -15,6 +15,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace DrankAPI
 {
     public class Startup
@@ -68,6 +69,12 @@ namespace DrankAPI
             {
                 await context.Response.WriteAsync("something went wrong, please check your URL or try again later . ");
             });
+
+            /*app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = " 746153962084-qqrpkob2971dev1u54qt6bra5p07ec65.apps.googleusercontent.com ",
+                ClientSecret = "MJ0o8IyzUeJLirS9fN753jtP"
+            });*/
         }
     }
 }

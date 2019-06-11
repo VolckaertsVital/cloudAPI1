@@ -8,5 +8,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App"/>
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All"/>
+    <PackageReference Include="PagedList.Mvc" Version="4.5.0"/>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="4.0.40804"/>
   </ItemGroup>
 </Project>

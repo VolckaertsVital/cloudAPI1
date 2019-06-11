@@ -53,7 +53,7 @@ using DrankAPI.Models;
             WriteLiteral("<!DOCTYPE html> \r\n<html>\r\n    ");
             EndContext();
             BeginContext(30, 120, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fca62fb71d3744819d32fa6f80b8ba53", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "43d5c96a0f024431b3a240d173512c17", async() => {
                 BeginContext(36, 79, true);
                 WriteLiteral("\r\n        <meta name=\"viewport\" content=\"width=device-width\"/>\r\n        <title>");
                 EndContext();
@@ -109,12 +109,12 @@ li a:hover {
     ");
             EndContext();
             BeginContext(497, 387, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec1ad9d574e142f2881f4e5435920ba2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e0fc654c4ef14ce0802e43750e86c3e7", async() => {
                 BeginContext(503, 77, true);
                 WriteLiteral("\r\n        <nav>\r\n            <ul>\r\n                <li>\r\n                    ");
                 EndContext();
                 BeginContext(580, 52, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "001e4452136a43a98ab612360eb49c1c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4632d57f51704d78a9cf935a609f197d", async() => {
                     BeginContext(624, 4, true);
                     WriteLiteral("List");
                     EndContext();
@@ -138,7 +138,7 @@ li a:hover {
                 WriteLiteral("\r\n                </li>\r\n                 <li>\r\n                    ");
                 EndContext();
                 BeginContext(700, 55, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f8338c20404a4e2fbb75dafee2275987", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c2751fe5dad5471892c8ec95d6ace851", async() => {
                     BeginContext(745, 6, true);
                     WriteLiteral("Create");
                     EndContext();
